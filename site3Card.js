@@ -65,7 +65,7 @@ function preAuth(string, success, fail)
     currency: "cad",
     source: parseCard(string),
   capture: false,
-    description: "Charge for refereshments"
+    description: "Vending machine purchase"
   }, function(err, charge) {
     // asynchronously called
     if (charge !== null && charge["status"] == "paid")
